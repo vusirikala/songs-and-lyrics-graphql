@@ -1,2 +1,1 @@
-# Lyrical-GraphQL
-Starter project from a GraphQL course on Udemy.com
+Server stores two collections: Songs, Lyrics. Each song can have multiple lyrics. 
