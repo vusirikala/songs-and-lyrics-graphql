@@ -2,6 +2,7 @@ import React from "react";
 //Helper to allow us to write graphql queries inside a component file
 import gql from 'graphql-tag';
 import { graphql } from 'react-apollo';
+import {Link} from 'react-router';
 
 const SongList = (props) => {
     console.log("props: ", props)
@@ -15,6 +16,12 @@ const SongList = (props) => {
                                         }                        
             )}
         </ul>
+        <Link
+            to="/songs/new"
+            className="btn-floating btn-large red light"
+        >
+            <i className="material-icons">add</i>
+        </Link>
     </div>
 }
 

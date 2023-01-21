@@ -7,7 +7,7 @@ import ApolloClient from 'apollo-client';
 import { ApolloProvider } from 'react-apollo';
 import SongList from './components/SongList';
 import App from './components/App';
-
+import SongCreate from './components/SongCreate';
 // apollo client makes an assumption that the backend uses /grapql endpoint for graphql queries
 const client = new ApolloClient({});
 
@@ -17,6 +17,7 @@ const Root = () => {
       <Router history={hashHistory}>
         <Route path="/" component={App}>
           <IndexRoute component={SongList} />
+          <Route path="songs/new" component={SongCreate} />
         </Route> 
       </Router>
     </ApolloProvider>
